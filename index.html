@@ -4,76 +4,418 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#292b25">
-  <meta name="description" content="Descubre Bosque y Río, cabañas rodeadas de bosque y naturaleza en la Región de Los Ríos, Chile. Consulta fechas y conoce nuestros alojamientos.">
+  <meta name="description" content="Descubre Bosque y Río Lodge: cabañas rodeadas de bosque y naturaleza en la Región de Los Ríos, Chile. Conoce los alojamientos y consulta tus fechas.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bosque y Río Lodge | Cabañas en la Región de Los Ríos">
+  <meta property="og:description" content="Un refugio entre el bosque y el agua. Conoce las cabañas y consulta tus fechas.">
+  <meta property="og:url" content="https://yallykuma.github.io/bosque-y-rio-lodge-pagina-web/">
   <title>Bosque y Río Lodge | Cabañas en la Región de Los Ríos, Chile</title>
-  <style>
-    :root{--forest:#292b25;--green:#2d6a4f;--olive:#656b43;--sage:#e8e8dc;--cream:#f5f4ef;--paper:#fffefa;--ink:#30332d;--muted:#62665e;--gold:#d4a373;--line:#e4e3db;--shadow:0 18px 48px #25271f17}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 Arial,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
-    header{position:sticky;top:0;z-index:10;background:#292b25f2;color:#fff;border-bottom:1px solid #ffffff20;backdrop-filter:blur(12px)}.bar{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font:22px Georgia,serif}.brand-icon{width:42px;height:42px;border:1px solid #ffffff66;border-radius:13px;display:grid;place-items:center;font-size:22px}.brand small{display:block;color:#dbddcb;font:10px Arial,sans-serif;letter-spacing:2px}.nav{display:flex;align-items:center;gap:22px;font-size:13px;color:#edeee9}.nav a:hover{color:var(--gold)}.nav-cta,.button{border:0;border-radius:10px;padding:12px 18px;font-weight:700}.nav-cta,.button.gold{background:var(--gold);color:#24251f}.menu{display:none;background:none;border:1px solid #ffffff66;color:white;border-radius:9px;padding:8px 11px}
-    .hero{min-height:570px;display:flex;align-items:center;position:relative;color:white;background:#464b36 url("images/cabanas-rio.jpg") center 55%/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#20221de8 0%,#292b25b8 52%,#292b2550 100%)}.hero-content{position:relative;padding:80px 0 105px;max-width:760px}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#e8c98f;font-weight:bold}.hero h1{font:normal clamp(44px,6vw,68px)/1.04 Georgia,serif;margin:16px 0}.hero p{font-size:18px;color:#f0f0eb;max-width:600px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px}.button.outline{color:white;background:#ffffff12;border:1px solid #ffffffaa}.button.green{background:var(--green);color:white}.button.cta{min-height:54px;padding:14px 23px;font-size:15px;box-shadow:0 6px 18px #1116}.hero-meta{font-size:13px!important;margin-top:17px;color:#f4f2e8!important}.hero-note{font-size:11px!important;color:#e0e0d7!important;margin-top:8px}
-    .booking{position:relative;margin-top:-48px;z-index:2;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:19px;box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr) auto;gap:13px;align-items:end}.field label{display:block;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin:0 0 7px}.field input,.field select{height:46px;width:100%;border:1px solid #d5d8ce;border-radius:9px;background:#fff;padding:0 11px;color:var(--ink)}
-    section{padding:68px 0}.heading{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px}.heading h2{font:normal clamp(32px,4vw,42px)/1.1 Georgia,serif;color:var(--forest);margin:8px 0}.heading p{color:var(--muted);max-width:540px;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--paper);border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-3px);box-shadow:0 22px 50px #25271f24}.card-photo{height:220px;width:100%;object-fit:cover;display:block;background:#758060}.card-body{padding:19px}.badge{display:inline-block;background:var(--sage);color:#4d5236;padding:5px 10px;border-radius:30px;font-size:11px;font-weight:bold}.card h3{font:normal 26px Georgia,serif;color:var(--forest);margin:10px 0 4px}.card p{color:var(--muted);font-size:14px;margin:8px 0 13px}.amenities{display:flex;gap:8px;flex-wrap:wrap;color:#56594f;font-size:11px;margin:0 0 15px}.amenities span{background:#f1f0e9;border-radius:20px;padding:4px 8px}.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:13px}.price{font-weight:bold;font-size:18px;color:var(--forest)}.price small{display:block;color:var(--muted);font-weight:normal;font-size:11px}.card-bottom .button{padding:9px 13px;min-height:40px;font-size:12px}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.about-image{width:100%;height:370px;object-fit:cover;border-radius:18px;box-shadow:var(--shadow)}.about-copy h2{font:normal clamp(32px,4vw,44px)/1.1 Georgia,serif;color:var(--forest);margin:10px 0 16px}.about-copy p{color:var(--muted)}.features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.feature{padding:12px;background:#fff;border:1px solid var(--line);border-radius:11px;font-size:13px}.feature b{display:block;color:var(--forest);margin-bottom:3px}
-    .reviews{background:#efeee7}.review-note{background:var(--paper);border:1px dashed #b6b69e;padding:22px;border-radius:14px;color:var(--muted);max-width:780px}.review-note strong{display:block;color:var(--forest);font:normal 23px Georgia,serif;margin-bottom:6px}
-    .app-section{background:#e8e8dc;overflow:hidden}.app-layout{display:grid;grid-template-columns:1fr .8fr;gap:48px;align-items:center}.app-copy h2{font:normal clamp(34px,4vw,46px)/1.08 Georgia,serif;color:var(--forest);margin:12px 0 16px}.app-copy>p{color:var(--muted);max-width:570px}.store-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.store-button{display:flex;align-items:center;gap:10px;padding:10px 15px;border-radius:10px;background:var(--forest);color:#fff;font-size:12px;line-height:1.25}.store-button b{display:block;font-size:14px}.store-button span:first-child{font-size:21px}.app-disclaimer{font-size:12px!important;margin-top:16px;color:#62665b!important}.phone-wrap{display:flex;justify-content:center;position:relative}.phone{width:260px;min-height:490px;background:#24251f;border:8px solid #24251f;border-radius:38px;padding:12px;box-shadow:0 24px 55px #25271f30;transform:rotate(3deg)}.phone-screen{min-height:458px;border-radius:25px;background:#f8f7f1;overflow:hidden;padding:18px 15px}.phone-notch{height:18px;width:90px;background:#24251f;border-radius:0 0 13px 13px;margin:-18px auto 16px}.phone-top{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--forest);font-weight:bold}.phone-greeting{margin:22px 0 12px;color:var(--muted);font-size:11px}.phone-title{font:23px/1.15 Georgia,serif;color:var(--forest);margin:0 0 15px}.phone-image{height:115px;width:100%;object-fit:cover;border-radius:13px}.phone-booking{background:white;border:1px solid var(--line);border-radius:12px;padding:13px;margin-top:13px;font-size:11px}.phone-booking strong{display:block;color:var(--forest);font-size:13px;margin-bottom:5px}.phone-status{display:inline-block;margin-top:9px;padding:4px 8px;border-radius:20px;background:#e8e8dc;color:#565c3c;font-size:10px}.phone-tabs{display:flex;justify-content:space-around;margin-top:18px;color:#676b59;font-size:10px}.phone-tabs span:first-child{color:var(--green);font-weight:bold}.phone-button{margin-top:11px;padding:9px;border-radius:8px;background:var(--green);color:white;text-align:center;font-size:11px;font-weight:bold}
-    .band{background:var(--forest);color:white}.band-inner{display:flex;align-items:center;justify-content:space-between;gap:28px}.band h2{font:normal clamp(32px,4vw,42px) Georgia,serif;margin:0 0 8px}.band p{color:#e6e6df;margin:0;max-width:650px}.contact{background:#fffefa;border:1px solid var(--line);border-radius:15px;padding:22px;min-width:270px;color:var(--ink)}.contact p{color:var(--muted);font-size:13px}.contact a{color:var(--green);font-weight:bold;text-decoration:underline;text-underline-offset:3px}.map-link{display:inline-block;margin-top:5px}.footer{background:#20221e;color:#eaeae4;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.footer small{color:#d1d1c7}.footer-links{display:flex;gap:18px;font-size:13px}
-    .float-cta{position:fixed;right:20px;bottom:20px;z-index:9;background:var(--green);color:white;border-radius:999px;padding:13px 19px;font-size:14px;font-weight:bold;box-shadow:0 8px 25px #18251d55}.float-cta:hover{background:#24573f}#toast{position:fixed;right:20px;bottom:78px;z-index:20;background:var(--forest);color:white;padding:14px 18px;border-radius:10px;box-shadow:var(--shadow);display:none;max-width:min(420px,calc(100% - 40px));font-size:14px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}:focus-visible{outline:3px solid #d4a373;outline-offset:3px}
-    @media(max-width:850px){.nav{gap:12px}.booking{grid-template-columns:repeat(2,1fr)}.booking .button{width:100%}.cards{grid-template-columns:repeat(2,1fr)}.cards .card:last-child{grid-column:span 2}.about{gap:24px}.app-layout{gap:25px}}
-    @media(max-width:620px){.wrap{width:min(100% - 28px,1160px)}.bar{height:66px}.menu{display:block}.nav{display:none;position:absolute;left:0;right:0;top:66px;padding:12px 18px 18px;background:var(--forest);flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav a{padding:8px}.nav-cta{margin-top:5px}.hero{min-height:540px;background-position:58% center}.hero-content{padding:65px 0 90px}.hero p{font-size:16px}.booking{margin-top:-35px;padding:14px;grid-template-columns:1fr 1fr;gap:10px}.booking .button{grid-column:span 2}section{padding:56px 0}.heading{display:block}.heading p{margin-top:10px}.cards{grid-template-columns:1fr}.cards .card:last-child{grid-column:auto}.card-photo{height:220px}.about{grid-template-columns:1fr}.about-image{height:280px}.features{gap:8px}.feature{font-size:12px}.app-layout{grid-template-columns:1fr;gap:30px}.phone{width:245px;min-height:470px}.phone-screen{min-height:438px}.store-buttons{gap:8px}.store-button{flex:1;justify-content:center}.band-inner{align-items:flex-start;flex-direction:column}.contact{width:100%}.footer-links{flex-wrap:wrap}.float-cta{right:12px;bottom:12px;padding:12px 15px;font-size:13px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
-  </style>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LodgingBusiness","name":"Bosque y Río Lodge","description":"Prototipo de alojamiento en cabañas en la Región de Los Ríos, Chile.","areaServed":{"@type":"AdministrativeArea","name":"Región de Los Ríos, Chile"},"knowsAbout":"Alojamiento en cabañas y turismo de naturaleza"}
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Bosque y Río Lodge",
+    "description": "Alojamiento en cabañas rodeadas de bosque y naturaleza en la Región de Los Ríos, Chile.",
+    "url": "https://yallykuma.github.io/bosque-y-rio-lodge-pagina-web/",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Región de Los Ríos, Chile"
+    },
+    "knowsAbout": ["Alojamiento en cabañas", "Turismo de naturaleza"]
+  }
   </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --forest: #292b25;
+      --green: #24583f;
+      --sage: #e8e8dc;
+      --cream: #f5f4ef;
+      --paper: #fffefa;
+      --ink: #30332d;
+      --muted: #555950;
+      --gold: #d4a373;
+      --line: #deddd4;
+      --shadow: 0 18px 48px #25271f17;
+      --content: 1160px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font: 16px/1.65 Arial, "Segoe UI", sans-serif; }
+    img { max-width: 100%; }
+    a { color: inherit; text-underline-offset: .2em; }
+    button, input, select { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+    .skip-link { position: absolute; z-index: 30; top: 8px; left: 8px; padding: 10px 14px; transform: translateY(-150%); border-radius: 8px; background: white; color: var(--forest); }
+    .skip-link:focus { transform: translateY(0); }
+    .wrap { width: min(var(--content), calc(100% - 40px)); margin-inline: auto; }
+    .site-header { position: sticky; z-index: 10; top: 0; background: #292b25f5; color: white; border-bottom: 1px solid #ffffff25; backdrop-filter: blur(12px); }
+    .bar { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; color: white; text-decoration: none; font: 22px Georgia, serif; }
+    .brand-icon { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid #ffffff66; border-radius: 13px; font: 22px Arial, sans-serif; }
+    .brand small { display: block; color: #e2e4dc; font: 10px Arial, sans-serif; letter-spacing: 1.5px; }
+    .nav { display: flex; align-items: center; gap: 22px; color: #f1f1ec; font-size: 14px; }
+    .nav a { text-decoration: none; }
+    .nav a:hover { color: #f0c797; }
+    .button { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; gap: 8px; padding: 11px 18px; border: 0; border-radius: 10px; font-weight: 700; text-decoration: none; cursor: pointer; transition: transform .2s, background-color .2s; }
+    .button:hover { transform: translateY(-2px); }
+    .button-green { background: var(--green); color: #fff; }
+    .button-green:hover { background: #19452f; }
+    .button-gold { background: var(--gold); color: #24251f; }
+    .button-outline { border: 1px solid #ffffffd0; background: #ffffff14; color: white; }
+    .menu { display: none; min-height: 44px; padding: 8px 12px; border: 1px solid #ffffff66; border-radius: 8px; background: transparent; color: white; cursor: pointer; }
+    .hero { position: relative; display: flex; min-height: 570px; align-items: center; color: white; background: #464b36 url("images/cabanas-rio.jpg") center 55%/cover no-repeat; }
+    .hero::before { position: absolute; inset: 0; background: linear-gradient(90deg, #171a16e8 0%, #20221dcc 48%, #292b2550 100%); content: ""; }
+    .hero-content { position: relative; max-width: 760px; padding-block: 74px 96px; }
+    .eyebrow { color: #36533d; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+    .hero .eyebrow { color: #f1d2aa; }
+    h1, h2, h3 { line-height: 1.15; }
+    h1 { max-width: 760px; margin: 16px 0; font: normal clamp(44px, 6vw, 64px)/1.04 Georgia, serif; }
+    .hero-copy { max-width: 620px; color: #f5f4ef; font-size: 18px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .hero-meta { margin: 20px 0 0; color: #f5f4ef; font-size: 14px; }
+    .prototype-note { margin: 8px 0 0; color: #f1e9df; font-size: 12px; }
+    .booking-wrap { position: relative; z-index: 2; margin-top: -46px; }
+    .booking { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) auto; align-items: end; gap: 13px; padding: 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); box-shadow: var(--shadow); }
+    .booking-title { grid-column: 1 / -1; margin: 0; color: var(--forest); font: 24px Georgia, serif; }
+    .field label { display: block; margin-bottom: 7px; color: #454940; font-size: 13px; font-weight: 700; }
+    .field input, .field select { width: 100%; min-height: 46px; padding: 9px 10px; border: 1px solid #aeb2a7; border-radius: 8px; background: #fff; color: var(--ink); }
+    section { padding-block: 78px; }
+    .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 26px; }
+    .section-heading h2, .about-copy h2, .app-copy h2, .location-copy h2 { margin: 8px 0 0; color: var(--forest); font: normal clamp(32px, 4vw, 42px)/1.1 Georgia, serif; }
+    .section-heading > p { max-width: 540px; margin: 0; color: var(--muted); }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .card { overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); box-shadow: var(--shadow); transition: transform .2s, box-shadow .2s; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 22px 50px #25271f24; }
+    .card-photo { display: block; width: 100%; height: 220px; object-fit: cover; background: #758060; }
+    .card-body { padding: 19px; }
+    .badge { display: inline-block; padding: 5px 10px; border-radius: 30px; background: var(--sage); color: #344a37; font-size: 12px; font-weight: 700; }
+    .card h3 { margin: 10px 0 5px; color: var(--forest); font: normal 26px Georgia, serif; }
+    .card p { min-height: 48px; margin: 8px 0 13px; color: var(--muted); font-size: 14px; }
+    .amenities { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; color: #42473e; font-size: 12px; }
+    .amenities span { padding: 4px 8px; border-radius: 20px; background: #f1f0e9; }
+    .card-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 14px; border-top: 1px solid var(--line); }
+    .price { color: var(--forest); font-size: 18px; font-weight: 700; }
+    .price small { display: block; color: var(--muted); font-size: 11px; font-weight: 400; }
+    .card-bottom .button { min-height: 42px; padding: 9px 13px; font-size: 13px; }
+    .about { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 38px; }
+    .about-image { width: 100%; height: 390px; border-radius: 18px; object-fit: cover; box-shadow: var(--shadow); }
+    .about-copy h2 { margin-bottom: 16px; }
+    .about-copy p { color: var(--muted); }
+    .features { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 22px; }
+    .feature { padding: 13px; border: 1px solid var(--line); border-radius: 11px; background: white; font-size: 14px; }
+    .feature strong { display: block; margin-bottom: 3px; color: var(--forest); }
+    .reviews { background: #efeee7; }
+    .review-note { max-width: 820px; padding: 24px; border: 1px solid #c5c6b7; border-radius: 14px; background: var(--paper); color: var(--muted); }
+    .review-note strong { display: block; margin-bottom: 6px; color: var(--forest); font: normal 23px Georgia, serif; }
+    .app-section { overflow: hidden; background: var(--sage); }
+    .app-layout { display: grid; grid-template-columns: 1fr .8fr; align-items: center; gap: 48px; }
+    .app-copy h2 { margin-bottom: 16px; }
+    .app-copy p { max-width: 570px; color: var(--muted); }
+    .app-disclaimer { font-size: 13px; }
+    .phone-wrap { display: flex; justify-content: center; }
+    .phone { width: 250px; min-height: 440px; padding: 12px; transform: rotate(2deg); border: 8px solid #24251f; border-radius: 36px; background: #24251f; box-shadow: 0 24px 55px #25271f30; }
+    .phone-screen { min-height: 424px; overflow: hidden; padding: 18px 15px; border-radius: 23px; background: #f8f7f1; }
+    .phone-notch { width: 86px; height: 18px; margin: -18px auto 16px; border-radius: 0 0 13px 13px; background: #24251f; }
+    .phone-top { display: flex; justify-content: space-between; color: var(--forest); font-size: 12px; font-weight: 700; }
+    .phone-greeting { margin: 22px 0 10px; color: var(--muted); font-size: 11px; }
+    .phone-title { color: var(--forest); font: 23px/1.15 Georgia, serif; }
+    .phone-image { width: 100%; height: 115px; margin-top: 12px; border-radius: 13px; object-fit: cover; }
+    .phone-booking { margin-top: 13px; padding: 13px; border: 1px solid var(--line); border-radius: 12px; background: white; font-size: 11px; }
+    .phone-booking strong { display: block; margin-bottom: 5px; color: var(--forest); font-size: 13px; }
+    .phone-status { display: inline-block; margin-top: 9px; padding: 4px 8px; border-radius: 20px; background: var(--sage); color: #3f523b; font-size: 10px; }
+    .phone-button { margin-top: 11px; padding: 9px; border-radius: 8px; background: var(--green); color: white; text-align: center; font-size: 11px; font-weight: 700; }
+    .location { background: var(--forest); color: white; }
+    .location-layout { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 30px; }
+    .location .eyebrow { color: #e5c396; }
+    .location-copy h2 { color: white; }
+    .location-copy p { max-width: 680px; color: #e8e8e0; }
+    .location-card { min-width: 250px; padding: 22px; border: 1px solid #ffffff45; border-radius: 15px; background: #ffffff0d; }
+    .location-card p { color: #e8e8e0; font-size: 14px; }
+    .location-card a { color: #f0d0a6; font-weight: 700; }
+    .footer { padding: 27px 0; background: #20221e; color: #f1f1eb; }
+    .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+    .footer small { color: #deded5; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; }
+    .footer-links a { color: white; }
+    .float-cta { position: fixed; z-index: 9; right: 20px; bottom: 20px; box-shadow: 0 8px 25px #18251d55; }
+    .toast { position: fixed; z-index: 20; right: 20px; bottom: 82px; display: none; max-width: min(440px, calc(100% - 40px)); padding: 14px 18px; border-radius: 10px; background: var(--forest); color: white; box-shadow: var(--shadow); }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    @media (max-width: 900px) {
+      .nav { gap: 13px; font-size: 13px; }
+      .booking { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .booking > .button { width: 100%; }
+      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .card:last-child { grid-column: 1 / -1; }
+    }
+    @media (max-width: 680px) {
+      html { scroll-padding-top: 74px; }
+      .wrap { width: min(var(--content), calc(100% - 28px)); }
+      .bar { min-height: 66px; }
+      .menu { display: inline-flex; align-items: center; }
+      .nav { position: absolute; top: 66px; right: 0; left: 0; display: none; align-items: stretch; padding: 14px 18px 18px; background: var(--forest); }
+      .nav.open { display: flex; flex-direction: column; }
+      .nav a { padding: 8px 4px; }
+      .nav .button { margin-top: 4px; }
+      .hero { min-height: 540px; background-position: 58% center; }
+      .hero-content { padding-block: 55px 85px; }
+      h1 { font-size: clamp(42px, 12vw, 56px); }
+      .hero-copy { font-size: 16px; }
+      .booking-wrap { margin-top: -34px; }
+      .booking { grid-template-columns: 1fr 1fr; padding: 15px; gap: 11px; }
+      .booking-title { font-size: 21px; }
+      .booking > .button { grid-column: 1 / -1; }
+      section { padding-block: 58px; }
+      .section-heading { display: block; }
+      .section-heading > p { margin-top: 12px; }
+      .cards { grid-template-columns: 1fr; }
+      .card:last-child { grid-column: auto; }
+      .about, .app-layout, .location-layout { grid-template-columns: 1fr; gap: 26px; }
+      .about-image { height: 290px; }
+      .features { gap: 8px; }
+      .phone-wrap { padding-top: 8px; }
+      .location-card { min-width: 0; }
+      .float-cta { right: 12px; bottom: 12px; min-height: 44px; padding: 10px 14px; font-size: 13px; }
+      .toast { right: 14px; bottom: 70px; }
+    }
+    @media (max-width: 380px) {
+      .brand { font-size: 19px; }
+      .brand-icon { width: 38px; height: 38px; }
+      .booking { grid-template-columns: 1fr; }
+      .booking-title, .booking > .button { grid-column: auto; }
+      .actions { flex-direction: column; align-items: stretch; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
 </head>
 <body>
-  <header><div class="wrap bar">
-    <a class="brand" href="#inicio" aria-label="Bosque y Río, ir al inicio"><span class="brand-icon" aria-hidden="true">♣</span><span>Bosque y Río<small>CABAÑAS · REGIÓN DE LOS RÍOS</small></span></a>
-    <button class="menu" id="menu" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">☰</button>
-    <nav class="nav" id="nav" aria-label="Navegación principal"><a href="#cabanas">Cabañas</a><a href="#experiencia">Experiencia</a><a href="#opiniones">Opiniones</a><a href="#ubicacion">Ubicación</a><button class="nav-cta" onclick="document.querySelector('#reservas').scrollIntoView()">Consultar fechas</button></nav>
-  </div></header>
-  <main>
-    <section class="hero" id="inicio" aria-label="Cabañas junto al río en la Región de Los Ríos"><div class="wrap hero-content">
-      <span class="eyebrow">Descanso junto al río · Sur de Chile</span>
-      <h1>Tu refugio entre el bosque y el agua.</h1>
-      <p>Descansa en una cabaña acogedora, rodeada de naturaleza en la Región de Los Ríos. Revisa nuestros alojamientos y consulta tus fechas.</p>
-      <div class="actions"><a class="button green cta" href="#reservas">Consultar disponibilidad</a><a class="button outline" href="#cabanas">Ver cabañas y precios</a></div>
-      <p class="hero-meta">📍 Región de Los Ríos, Chile · Estadías para parejas y familias</p>
-      <p class="hero-note">Prototipo académico · Precios y disponibilidad de demostración.</p>
-    </div></section>
-    <div class="wrap" id="reservas"><form class="booking" id="bookingForm" aria-label="Consulta referencial de estadía">
-      <div class="field"><label for="arrival">Llegada</label><input id="arrival" name="arrival" type="date" required></div>
-      <div class="field"><label for="departure">Salida</label><input id="departure" name="departure" type="date" required></div>
-      <div class="field"><label for="guests">Huéspedes</label><select id="guests" name="guests"><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5 personas</option><option>6 personas</option></select></div>
-      <div class="field"><label for="cabinType">Cabaña</label><select id="cabinType" name="cabinType"><option value="">Cualquiera</option><option>Niebla</option><option>Alerce</option><option>Arrayán</option></select></div>
-      <button class="button green" type="submit">Consultar</button>
-    </form></div>
-    <section id="cabanas"><div class="wrap">
-      <div class="heading"><div><span class="eyebrow">Alojamiento</span><h2>Cabañas para desconectar</h2></div><p>Elige el espacio que mejor se adapte a tu viaje. Tarifas y servicios ilustrativos de este prototipo.</p></div>
-      <div class="cards">
-        <article class="card"><img class="card-photo" src="images/cabana-terraza.jpg" alt="Cabaña de madera elevada con terraza rodeada de vegetación" loading="lazy" decoding="async"><div class="card-body"><span class="badge">Ideal para parejas</span><h3>Cabaña Niebla</h3><p>Un espacio acogedor para descansar y disfrutar del entorno natural.</p><div class="amenities"><span>Hasta 2 huéspedes</span><span>Terraza</span><span>Entorno natural</span></div><div class="card-bottom"><span class="price">$68.000<small>por noche · demo</small></span><a class="button green" href="#reservas" aria-label="Consultar disponibilidad para Cabaña Niebla">Consultar</a></div></div></article>
-        <article class="card"><img class="card-photo" src="images/caba%C3%B1a2.webp" alt="Cabaña de madera en un paisaje de montaña" loading="lazy" decoding="async"><div class="card-body"><span class="badge">Para compartir</span><h3>Cabaña Alerce</h3><p>Comodidad y espacio para una escapada en familia o con amigos.</p><div class="amenities"><span>Hasta 4 huéspedes</span><span>Vista a montaña</span><span>Áreas verdes</span></div><div class="card-bottom"><span class="price">$89.000<small>por noche · demo</small></span><a class="button green" href="#reservas" aria-label="Consultar disponibilidad para Cabaña Alerce">Consultar</a></div></div></article>
-        <article class="card"><img class="card-photo" src="images/cabana-montana.jpg" alt="Cabaña de madera rodeada de vegetación y montañas" loading="lazy" decoding="async"><div class="card-body"><span class="badge">Más espacio</span><h3>Cabaña Arrayán</h3><p>Un refugio amplio para compartir y disfrutar los paisajes del sur.</p><div class="amenities"><span>Hasta 6 huéspedes</span><span>Terraza</span><span>Montaña</span></div><div class="card-bottom"><span class="price">$110.000<small>por noche · demo</small></span><a class="button green" href="#reservas" aria-label="Consultar disponibilidad para Cabaña Arrayán">Consultar</a></div></div></article>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#inicio" aria-label="Bosque y Río, ir al inicio">
+        <span class="brand-icon" aria-hidden="true">♣</span>
+        <span>Bosque y Río<small>CABAÑAS · REGIÓN DE LOS RÍOS</small></span>
+      </a>
+      <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú de navegación">☰ Menú</button>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#cabanas">Cabañas</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a class="button button-gold" href="#reservas">Consultar fechas</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-label="Cabañas junto al río en la Región de Los Ríos">
+      <div class="wrap hero-content">
+        <span class="eyebrow">Descanso junto al río · Sur de Chile</span>
+        <h1>Tu refugio entre el bosque y el agua.</h1>
+        <p class="hero-copy">Descansa en una cabaña acogedora, rodeada de naturaleza en la Región de Los Ríos. Conoce nuestros alojamientos y consulta tus fechas.</p>
+        <div class="actions">
+          <a class="button button-gold" href="#reservas">Consultar disponibilidad</a>
+          <a class="button button-outline" href="#cabanas">Ver cabañas y tarifas</a>
+        </div>
+        <p class="hero-meta">📍 Región de Los Ríos, Chile · Estadías para parejas y familias</p>
+        <p class="prototype-note">Prototipo académico: tarifas y disponibilidad de demostración.</p>
       </div>
-    </div></section>
-    <section id="experiencia"><div class="wrap about">
-      <img class="about-image" src="images/cabanas-rio.jpg" alt="Cabaña de madera rodeada de bosque junto a un río" loading="lazy" decoding="async">
-      <div class="about-copy"><span class="eyebrow">La experiencia</span><h2>El sur se disfruta sin apuro.</h2><p>Un entorno natural para desconectar, respirar aire puro y compartir momentos especiales. Esta propuesta visual representa una pequeña empresa de alojamiento local.</p><div class="features"><div class="feature"><b>🌿 Naturaleza</b>Río, vegetación y aire libre.</div><div class="feature"><b>🪵 Calidez</b>Arquitectura acogedora en madera.</div><div class="feature"><b>🧭 Entorno local</b>Una base para conocer la región.</div><div class="feature"><b>☕ Descanso</b>Tiempo para compartir y recargar energías.</div></div></div>
-    </div></section>
-    <section class="reviews" id="opiniones"><div class="wrap"><div class="heading"><div><span class="eyebrow">Confianza y transparencia</span><h2>Opiniones de huéspedes</h2></div></div><div class="review-note"><strong>Próximamente, experiencias reales.</strong>En este prototipo no agregamos reseñas ficticias. Aquí se podrán mostrar opiniones verificadas y enlaces a plataformas de reseñas cuando el alojamiento disponga de ellas.</div></div></section>
-    <section class="app-section" id="app"><div class="wrap app-layout">
-      <div class="app-copy"><span class="eyebrow">Tu estadía, desde el celular</span><h2>Una app para acompañar tu viaje</h2><p>Consulta tus reservas, conoce las cabañas y ten a mano la información de tu estadía. Esta es una propuesta visual de aplicación móvil.</p><p><strong>Concepto para iOS y Android.</strong></p><div class="store-buttons"><div class="store-button" aria-label="Concepto de aplicación para iOS, no disponible para descarga"><span aria-hidden="true">●</span><span>Concepto para<b>iOS</b></span></div><div class="store-button" aria-label="Concepto de aplicación para Android, no disponible para descarga"><span aria-hidden="true">▶</span><span>Concepto para<b>Android</b></span></div></div><p class="app-disclaimer">Prototipo académico: la aplicación aún no está publicada ni disponible para descarga.</p></div>
-      <div class="phone-wrap" aria-label="Vista referencial de la aplicación móvil"><div class="phone"><div class="phone-screen"><div class="phone-notch"></div><div class="phone-top"><span>♣ Bosque y Río</span><span aria-hidden="true">☰</span></div><p class="phone-greeting">HOLA, VIAJERO</p><h3 class="phone-title">Tu escapada al sur comienza aquí.</h3><img class="phone-image" src="images/cabanas-rio.jpg" alt="Vista de cabaña y río en la aplicación de demostración" loading="lazy" decoding="async"><div class="phone-booking"><strong>Tu próxima estadía</strong> Cabaña Niebla · Fechas de ejemplo<br><span class="phone-status">Solicitud de demostración</span></div><div class="phone-button">Explorar cabañas</div><div class="phone-tabs"><span>⌂ Inicio</span><span>▣ Reservas</span><span>♡ Favoritos</span><span>● Perfil</span></div></div></div></div>
-    </div></section>
-    <section class="band" id="ubicacion"><div class="wrap band-inner"><div><span class="eyebrow">Región de Los Ríos · Chile</span><h2>Ven a descubrir el sur.</h2><p>La dirección exacta y los canales de contacto del alojamiento se incorporarán cuando estén confirmados. Consulta la ubicación general de la región.</p></div><div class="contact"><b>Ubicación general</b><p>Región de Los Ríos, Chile. La dirección del emprendimiento está pendiente de confirmar.</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Regi%C3%B3n+de+Los+R%C3%ADos%2C+Chile" target="_blank" rel="noopener noreferrer">Ver Región de Los Ríos en Google Maps ↗</a></div></div></section>
+    </section>
+
+    <div class="wrap booking-wrap" id="reservas">
+      <form class="booking" id="bookingForm" aria-labelledby="booking-title">
+        <h2 class="booking-title" id="booking-title">Consulta tus fechas</h2>
+        <div class="field">
+          <label for="arrival">Llegada</label>
+          <input id="arrival" name="arrival" type="date" required>
+        </div>
+        <div class="field">
+          <label for="departure">Salida</label>
+          <input id="departure" name="departure" type="date" required>
+        </div>
+        <div class="field">
+          <label for="guests">Huéspedes</label>
+          <select id="guests" name="guests">
+            <option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5 personas</option><option>6 personas</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="cabinType">Cabaña</label>
+          <select id="cabinType" name="cabinType">
+            <option value="">Cualquiera</option><option>Niebla</option><option>Alerce</option><option>Arrayán</option>
+          </select>
+        </div>
+        <button class="button button-green" type="submit">Preparar consulta</button>
+      </form>
+    </div>
+
+    <section id="cabanas" aria-labelledby="cabins-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><span class="eyebrow">Alojamiento</span><h2 id="cabins-title">Cabañas para desconectar</h2></div>
+          <p>Elige el espacio que mejor se adapte a tu viaje. Las tarifas y características que se muestran son ilustrativas para este prototipo.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <img class="card-photo" src="images/cabana-terraza.jpg" alt="Cabaña de madera elevada con terraza rodeada de vegetación" width="720" height="440" fetchpriority="high" decoding="async">
+            <div class="card-body">
+              <span class="badge">Ideal para parejas</span><h3>Cabaña Niebla</h3>
+              <p>Un espacio acogedor para descansar y disfrutar del entorno natural.</p>
+              <div class="amenities"><span>Hasta 2 huéspedes</span><span>Terraza</span><span>Entorno natural</span></div>
+              <div class="card-bottom"><span class="price">$68.000<small>por noche · tarifa demo</small></span><a class="button button-green" href="#reservas" aria-label="Consultar fechas para Cabaña Niebla">Consultar</a></div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-photo" src="images/caba%C3%B1a2.webp" alt="Cabaña de madera en un paisaje de montaña" width="720" height="440" loading="lazy" decoding="async">
+            <div class="card-body">
+              <span class="badge">Para compartir</span><h3>Cabaña Alerce</h3>
+              <p>Comodidad y espacio para una escapada en familia o con amigos.</p>
+              <div class="amenities"><span>Hasta 4 huéspedes</span><span>Vista a montaña</span><span>Áreas verdes</span></div>
+              <div class="card-bottom"><span class="price">$89.000<small>por noche · tarifa demo</small></span><a class="button button-green" href="#reservas" aria-label="Consultar fechas para Cabaña Alerce">Consultar</a></div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-photo" src="images/cabana-montana.jpg" alt="Cabaña de madera rodeada de vegetación y montañas" width="720" height="440" loading="lazy" decoding="async">
+            <div class="card-body">
+              <span class="badge">Más espacio</span><h3>Cabaña Arrayán</h3>
+              <p>Un refugio amplio para compartir y disfrutar los paisajes del sur.</p>
+              <div class="amenities"><span>Hasta 6 huéspedes</span><span>Terraza</span><span>Montaña</span></div>
+              <div class="card-bottom"><span class="price">$110.000<small>por noche · tarifa demo</small></span><a class="button button-green" href="#reservas" aria-label="Consultar fechas para Cabaña Arrayán">Consultar</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" aria-labelledby="experience-title">
+      <div class="wrap about">
+        <img class="about-image" src="images/cabanas-rio.jpg" alt="Cabaña de madera rodeada de bosque junto a un río" width="800" height="600" loading="lazy" decoding="async">
+        <div class="about-copy">
+          <span class="eyebrow">La experiencia</span>
+          <h2 id="experience-title">El sur se disfruta sin apuro.</h2>
+          <p>Un entorno natural para desconectar, respirar aire puro y compartir momentos especiales. Esta propuesta visual representa una pequeña empresa de alojamiento local.</p>
+          <div class="features">
+            <div class="feature"><strong>Naturaleza</strong>Río, vegetación y aire libre.</div>
+            <div class="feature"><strong>Calidez</strong>Arquitectura acogedora en madera.</div>
+            <div class="feature"><strong>Entorno local</strong>Una base para conocer la región.</div>
+            <div class="feature"><strong>Descanso</strong>Tiempo para compartir y recargar energías.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="opiniones" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="section-heading"><div><span class="eyebrow">Confianza y transparencia</span><h2 id="reviews-title">Opiniones de huéspedes</h2></div></div>
+        <div class="review-note"><strong>Reseñas reales próximamente</strong>Este prototipo no incluye testimonios ni calificaciones ficticias. Cuando existan reseñas verificadas, se podrán mostrar aquí con enlaces a sus fuentes.</div>
+      </div>
+    </section>
+
+    <section class="app-section" id="app" aria-labelledby="app-title">
+      <div class="wrap app-layout">
+        <div class="app-copy">
+          <span class="eyebrow">Tu estadía, desde el celular</span>
+          <h2 id="app-title">Una app para acompañar tu viaje</h2>
+          <p>Consulta tus reservas, conoce las cabañas y ten a mano la información de tu estadía. Esta es una propuesta visual de aplicación móvil.</p>
+          <p><strong>Concepto para iOS y Android.</strong></p>
+          <p class="app-disclaimer">Prototipo académico: la aplicación aún no está publicada ni disponible para descarga.</p>
+        </div>
+        <div class="phone-wrap" aria-label="Vista referencial de una aplicación móvil, no disponible para descarga">
+          <div class="phone" aria-hidden="true"><div class="phone-screen">
+            <div class="phone-notch"></div><div class="phone-top"><span>♣ Bosque y Río</span><span>☰</span></div>
+            <p class="phone-greeting">HOLA, VIAJERO</p><div class="phone-title">Tu escapada al sur comienza aquí.</div>
+            <img class="phone-image" src="images/cabanas-rio.jpg" alt="" width="400" height="230" loading="lazy" decoding="async">
+            <div class="phone-booking"><strong>Tu próxima estadía</strong>Cabaña Niebla · Fechas de ejemplo<br><span class="phone-status">Solicitud de demostración</span></div>
+            <div class="phone-button">Explorar cabañas</div>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="ubicacion" aria-labelledby="location-title">
+      <div class="wrap location-layout">
+        <div class="location-copy">
+          <span class="eyebrow">Región de Los Ríos · Chile</span>
+          <h2 id="location-title">Ven a descubrir el sur.</h2>
+          <p>La dirección exacta y los canales de contacto del alojamiento deben confirmarse antes de publicar información comercial. Consulta la ubicación general de la región en el mapa.</p>
+        </div>
+        <div class="location-card">
+          <strong>Ubicación general</strong>
+          <p>Región de Los Ríos, Chile. La dirección del emprendimiento está pendiente de confirmar.</p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Regi%C3%B3n+de+Los+R%C3%ADos%2C+Chile" target="_blank" rel="noopener noreferrer">Ver región en Google Maps ↗</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="wrap footer-inner"><div><strong>Bosque y Río</strong><br><small>Prototipo académico · Cabañas en la Región de Los Ríos</small></div><div class="footer-links"><a href="#inicio">Inicio</a><a href="#cabanas">Cabañas</a><a href="#opiniones">Opiniones</a><a href="#app">App móvil</a></div></div></footer>
-  <a class="float-cta" href="#reservas" aria-label="Ir al formulario para consultar disponibilidad">Consultar fechas</a>
-  <div id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div><strong>Bosque y Río</strong><br><small>Prototipo académico · Cabañas en la Región de Los Ríos</small></div>
+      <nav class="footer-links" aria-label="Enlaces del pie de página"><a href="#inicio">Inicio</a><a href="#cabanas">Cabañas</a><a href="#opiniones">Opiniones</a><a href="#reservas">Consultar fechas</a></nav>
+    </div>
+  </footer>
+  <a class="button button-green float-cta" href="#reservas" aria-label="Ir al formulario para consultar disponibilidad">Consultar fechas</a>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
   <script>
-    const today=new Date();const iso=d=>{const x=new Date(d);x.setMinutes(x.getMinutes()-x.getTimezoneOffset());return x.toISOString().slice(0,10)};const arrival=document.querySelector('#arrival'),departure=document.querySelector('#departure');arrival.min=iso(today);const next=new Date(today);next.setDate(next.getDate()+1);arrival.value=iso(next);departure.min=arrival.value;const next2=new Date(next);next2.setDate(next2.getDate()+1);departure.value=iso(next2);arrival.addEventListener('change',()=>{const min=new Date(arrival.value+'T12:00:00');min.setDate(min.getDate()+1);departure.min=iso(min);if(departure.value<=arrival.value)departure.value=iso(min)});
-    document.querySelector('#bookingForm').addEventListener('submit',e=>{e.preventDefault();const cabin=document.querySelector('#cabinType').value||'cabaña';const toast=document.querySelector('#toast');toast.textContent=`Consulta de demostración: ${cabin}, ${arrival.value} al ${departure.value}. No se envió ninguna reserva.`;toast.style.display='block';setTimeout(()=>toast.style.display='none',5000)});
-    const menu=document.querySelector('#menu'),nav=document.querySelector('#nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Abrir menú')}));
+    (() => {
+      const arrival = document.querySelector('#arrival');
+      const departure = document.querySelector('#departure');
+      const form = document.querySelector('#bookingForm');
+      const toast = document.querySelector('#toast');
+      const menu = document.querySelector('#menu');
+      const nav = document.querySelector('#nav');
+      let toastTimer;
+
+      const formatDate = (date) => {
+        const local = new Date(date);
+        local.setMinutes(local.getMinutes() - local.getTimezoneOffset());
+        return local.toISOString().slice(0, 10);
+      };
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      arrival.min = formatDate(tomorrow);
+      arrival.value = formatDate(tomorrow);
+      const dayAfter = new Date(tomorrow);
+      dayAfter.setDate(dayAfter.getDate() + 1);
+      departure.min = formatDate(dayAfter);
+      departure.value = formatDate(dayAfter);
+
+      arrival.addEventListener('change', () => {
+        const nextDay = new Date(`${arrival.value}T12:00:00`);
+        nextDay.setDate(nextDay.getDate() + 1);
+        departure.min = formatDate(nextDay);
+        if (departure.value <= arrival.value) departure.value = formatDate(nextDay);
+      });
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        const cabin = document.querySelector('#cabinType').value || 'cualquier cabaña';
+        toast.textContent = `Consulta de demostración: ${cabin}, del ${arrival.value} al ${departure.value}. No se envió ninguna reserva; los datos de contacto reales deben agregarse para habilitar solicitudes.`;
+        toast.style.display = 'block';
+        window.clearTimeout(toastTimer);
+        toastTimer = window.setTimeout(() => { toast.style.display = 'none'; }, 8000);
+      });
+
+      menu.addEventListener('click', () => {
+        const expanded = menu.getAttribute('aria-expanded') === 'true';
+        menu.setAttribute('aria-expanded', String(!expanded));
+        menu.setAttribute('aria-label', expanded ? 'Abrir menú de navegación' : 'Cerrar menú de navegación');
+        nav.classList.toggle('open', !expanded);
+      });
+      nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          menu.setAttribute('aria-expanded', 'false');
+          menu.setAttribute('aria-label', 'Abrir menú de navegación');
+        });
+      });
+    })();
   </script>
 </body>
 </html>
